@@ -1,15 +1,27 @@
 "use client";
 
 import React from "react";
-import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Tabs, Tab } from "@nextui-org/react";
+import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Tabs, Tab, Button } from "@nextui-org/react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ScheduleTable() {
   return (
     <div className="w-4/5 mx-auto">
       <div>
         <div>
-          <div className="text-center">
-            <h1 className="text-5xl">Time Table</h1>
+          <div className="">
+            <div className="flex py-1s">
+              <div className="w-min font-bold text-left">
+                <Button>&lt;</Button>
+              </div>
+              <div className="w-full text-center py-2 bg-gray-300 mx-4 rounded-xl font-medium font-mono">
+                <h1>ICT, Mathermatics and Statistics</h1>
+              </div>
+              <div className="w-min text-right">
+                <Button>&gt;</Button>
+              </div>
+            </div>
+            <div className="my-6 text-center"><h1 className="text-5xl">Time Table</h1></div>
           </div>
           <Tabs aria-label="Options" color="primary">
             <Tab key="Day 1" title="Day 1">
@@ -76,7 +88,7 @@ export default function ScheduleTable() {
                   <h1 className="font-extrabold text-xl">A3.2</h1>
                 </div>
               </div>
-              
+
               <div className="flex py-1 text-center text-xs">
                 <div className="w-1/3 font-bold"><h1>Session Chairs</h1></div>
                 <div className="w-1/3"><h1>Prof. AAI Perera</h1></div>
@@ -128,7 +140,7 @@ export default function ScheduleTable() {
                   <h1 className="font-extrabold text-xl">A3.2</h1>
                 </div>
               </div>
-              
+
               <div className="flex py-1 text-center text-xs">
                 <div className="w-1/3 font-bold"><h1>Session Chairs</h1></div>
                 <div className="w-1/3"><h1>Prof. AAI Perera</h1></div>
@@ -234,7 +246,7 @@ export default function ScheduleTable() {
                   <h1 className="font-extrabold text-xl">A3.2</h1>
                 </div>
               </div>
-              
+
               <div className="flex py-1 text-center text-xs">
                 <div className="w-1/3 font-bold"><h1>Session Chairs</h1></div>
                 <div className="w-1/3"><h1>Prof. AAI Perera</h1></div>
